@@ -26,6 +26,9 @@ def set_custom_prompt():
                             input_variables=['context', 'question'])
     return prompt
 
+
+
+
 #Retrieval QA Chain
 def retrieval_qa_chain(llm, prompt, db):
     qa_chain = RetrievalQA.from_chain_type(llm=llm,
